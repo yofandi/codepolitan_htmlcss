@@ -4,57 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My Webpage</title>
-	<style type="text/css">
-		.container {
-			width: 800px;
-			margin: 0 auto;
-		}
-		.header {
-			background-color: #eee;
-			min-height: 50px;
-			text-align: center;
-		}
-
-		.logo img {
-			width: 200px;
-		}
-
-		.menu ul {
-			padding: 0;
-		}
-
-		.menu ul li {
-			display: inline-block;
-		}
-
-		.menu ul li a {
-			padding: 10px 20px;
-			text-decoration: none;
-		}
-
-		.thumbnail {
-			background-color: white;
-			text-align: center;
-			padding: 10px;
-			width: 225px;
-			margin: 10px;
-			float: left;
-		}
-
-		.thumbnail img {
-			width: 100%;
-		}
-
-		.content {
-			background-color: #ddd;
-			min-height: 500px;
-			overflow: auto;
-		}
-		.footer {
-			background-color: #ccc;
-			min-height: 50px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="container">
@@ -66,10 +16,27 @@
 			<div class="menu">
 				<ul>
 					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li>
+						<a href="#">About</a>
+						<ul class="submenu">
+							<li><a href="#" title="">CV</a></li>
+							<li><a href="#" title="">Education</a></li>
+							<li><a href="#" title="">Portofolio</a></li>
+						</ul>
+					</li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</div>
+		</div>
+
+		<div class="jumbotron">	
+			<h2>Welcome to My Homepages</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
 		</div>
 
 		<div class="content">
@@ -112,7 +79,6 @@
 				<h2>Rp. 290.000</h2>
 			</div>
 		</div>
-
 		<div class="footer">
 			<p>copyright 2018 My Page</p>
 		</div>
